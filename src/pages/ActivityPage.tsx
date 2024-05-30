@@ -1,5 +1,21 @@
 import {Search, Grip, Bell, ChevronDown} from "lucide-react";
 
+export const CardCurrency = () => {
+  return (
+    <div className="flex flex-none items-center gap-2 rounded-lg bg-gradient-to-br from-yellow-400 to-yellow-600 p-4 text-lg shadow-lg shadow-yellow-400/40">
+      <div className="size-[3.5rem] rounded-full bg-black/20" />
+      <div className="grid grid-cols-[100px,auto] gap-x-4 gap-y-1">
+        <span className=" text-end text-xl font-semibold">1.9678</span>
+        <span className=" text-end font-semibold  opacity-50">BTC</span>
+        <div className="col-span-2 flex items-center gap-2 ">
+          <div className="h-[50px] w-[100px] rounded bg-black/20" />
+          <span>+12,5%</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const ActivityPage = () => {
   return (
     <div className="p-8 pt-10">
@@ -37,10 +53,24 @@ const ActivityPage = () => {
         </div>
       </nav>
 
-      <main>
-        <span>Total balance: $183.936</span>
+      <main className="mx-auto mt-14 max-w-4xl ">
+        <p className="inline-block space-x-5 text-4xl font-bold">
+          <span>Total balance </span>
+          <span>$183.936</span>
+        </p>
 
-        <div>{/* currency cards */}</div>
+        <div className="flex w-full gap-5 overflow-x-auto ">
+          <div className="mx-auto flex w-full gap-5 overflow-x-auto  py-8 pl-1 pr-1">
+            <CardCurrency />
+            <CardCurrency />
+            <CardCurrency />
+          </div>
+          <div className="py-8">
+            <div className="flex h-[113px] w-[265px] cursor-pointer items-center justify-center gap-2 rounded-lg border border-dashed p-4 text-lg opacity-50 transition-opacity hover:opacity-80">
+              + Add Currency
+            </div>
+          </div>
+        </div>
 
         <div>
           <div>{/* graphic */}</div>
