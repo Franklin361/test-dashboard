@@ -18,7 +18,7 @@ export const SectionListCurrency = () => {
           ))}
         </div>
         <div className="py-8">
-          <button className="flex h-[113px] w-[265px] cursor-pointer items-center justify-center gap-2 rounded-lg border border-dashed p-4 text-lg opacity-50 transition-opacity hover:opacity-80">
+          <button className="flex h-[113px] w-[265px] cursor-pointer items-center justify-center gap-2 rounded-lg border border-dashed p-4 text-lg opacity-50 transition-opacity hover:opacity-80 active:opacity-100">
             + Add Currency
           </button>
         </div>
