@@ -15,7 +15,7 @@ import {NavLink} from "react-router-dom";
 
 export const SideBar = () => {
   return (
-    <aside className="w-[300px] rounded-2xl border border-white/20 bg-[#23253A] ">
+    <aside className=" w-[300px] rounded-2xl border border-white/20 bg-[#23253A]">
       <div className="p-4 pt-6">
         <img alt="" className="h-[60px]" src="/image.png" />
       </div>

@@ -23,3 +23,20 @@ body{
     @apply link hover:bg-black/20;
   }
 }
+
+
+.scroll::-webkit-scrollbar {
+  height: .5em;
+}
+ 
+.scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.493);
+  border-radius: 5px;
+}
+ 
+.scroll::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+}
