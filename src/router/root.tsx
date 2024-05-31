@@ -10,11 +10,13 @@ import {AnalyticsPage} from "../pages/AnalyticsPage";
 import {HelpPage} from "../pages/HelpPage";
 import {SettingsPage} from "../pages/SettingsPage";
 import {AnnouncementsPage} from "../pages/AnnouncementsPage";
+import {ErrorPage} from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
