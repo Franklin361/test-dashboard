@@ -1,5 +1,7 @@
 import {SVGProps} from "react";
 
+import {cn} from "../lib/utils";
+
 export type IconCurrencyType = "ethereum" | "bitcoin" | "litecoin";
 
 interface IIconCurrency extends SVGProps<SVGSVGElement> {
@@ -11,7 +13,7 @@ export const IconCurrency = ({iconName, className, ...props}: IIconCurrency) => 
     ethereum: (
       <svg
         {...props}
-        className={`size-[3.5rem] ${className}`}
+        className={cn(className)}
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -24,7 +26,7 @@ export const IconCurrency = ({iconName, className, ...props}: IIconCurrency) => 
     bitcoin: (
       <svg
         {...props}
-        className={`size-[3.5rem] ${className}`}
+        className={cn(className)}
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -37,7 +39,7 @@ export const IconCurrency = ({iconName, className, ...props}: IIconCurrency) => 
     litecoin: (
       <svg
         {...props}
-        className={`size-[3rem] ${className}`}
+        className={cn(className)}
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

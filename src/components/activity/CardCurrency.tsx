@@ -12,10 +12,10 @@ interface ICardCurrencyProps {
 export const CardCurrency = (currency: ICardCurrencyProps) => {
   return (
     <div
-      className={`flex flex-none snap-start items-center gap-2 rounded-lg border bg-gradient-to-br p-4 text-lg ${currency.isActive ? "border-transparent from-yellow-400 to-yellow-600 shadow-lg shadow-yellow-400/40" : "border-gray-600 from-gray-700 to-gray-900 "}`}
+      className={`flex flex-none snap-start items-center gap-2 rounded-lg border bg-gradient-to-br p-2 text-sm lg:p-4 lg:text-lg ${currency.isActive ? "border-transparent from-yellow-400 to-yellow-600 shadow-lg shadow-yellow-400/40" : "border-gray-600 from-gray-700 to-gray-900 "}`}
     >
       <IconCurrency
-        className={`${currency.isActive ? "text-white" : "text-gray-500"}`}
+        className={`size-7 lg:size-[3.5rem] ${currency.isActive ? "text-white" : "text-gray-500"}`}
         iconName={currency.type}
       />
       <div className="grid grid-cols-[100px,auto] gap-x-4 gap-y-1">

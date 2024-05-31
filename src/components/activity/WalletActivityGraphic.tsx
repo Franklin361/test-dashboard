@@ -16,7 +16,7 @@ const labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "
 
 export const WalletActivityGraphic = () => {
   return (
-    <div className="">
+    <div className="mx-auto w-fit md:w-full md:max-w-2xl">
       <Line
         data={{
           labels,

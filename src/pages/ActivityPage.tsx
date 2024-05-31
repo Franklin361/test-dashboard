@@ -4,9 +4,9 @@ import {SectionWalletActivity} from "../components/activity/SectionWalletActivit
 
 const ActivityPage = () => {
   return (
-    <div className="pl-6 pr-4 pt-10">
+    <div className="mx-auto pl-4 pr-4 pt-16 lg:pr-10 lg:pt-10 xl:max-w-7xl">
       <NavbarActivityPage />
-      <main className="mt-14">
+      <main className="my-14">
         <SectionListCurrency />
         <SectionWalletActivity />
       </main>

@@ -5,20 +5,20 @@ import {CardCurrency} from "./CardCurrency";
 
 export const SectionListCurrency = () => {
   return (
-    <section className="mx-auto max-w-4xl">
-      <p className="inline-block space-x-5 text-3xl font-bold">
+    <section className="mx-auto max-w-md md:max-w-2xl lg:max-w-4xl ">
+      <p className="inline-block space-x-5 text-2xl font-bold lg:text-3xl">
         <span>Total balance </span>
         <span>$183.936</span>
       </p>
 
-      <div className="flex w-full gap-5 overflow-x-auto">
-        <div className="scroll mx-auto flex w-full snap-x snap-mandatory  gap-5 overflow-x-auto scroll-smooth py-8 pl-1 pr-1">
+      <div className="grid w-full grid-cols-1 gap-0 overflow-x-auto lg:flex lg:gap-5">
+        <div className="scroll mx-auto flex w-full snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth py-8 pl-1 pr-1">
           {Object.entries(typeCurrency).map(([key, value]) => (
             <CardCurrency key={key} {...value} type={key as IconCurrencyType} />
           ))}
         </div>
-        <div className="py-8">
-          <button className="flex h-[113px] w-[265px] cursor-pointer items-center justify-center gap-2 rounded-lg border border-dashed p-4 text-lg opacity-50 transition-opacity hover:opacity-80 active:opacity-100">
+        <div className="px-2 py-8 lg:px-0">
+          <button className="flex h-[100px] w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-dashed p-4 text-sm opacity-50 transition-opacity hover:opacity-80 active:opacity-100 lg:h-[113px] lg:w-[265px] lg:text-lg">
             + Add Currency
           </button>
         </div>

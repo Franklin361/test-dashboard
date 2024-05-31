@@ -10,14 +10,21 @@ import {
   Wallet,
   Newspaper,
   Mail,
+  CircleX,
 } from "lucide-react";
 import {NavLink} from "react-router-dom";
 
 export const SideBar = () => {
   return (
-    <aside className="scroll sticky top-2 h-[97.5dvh] w-[300px] overflow-y-auto rounded-2xl border border-white/20 bg-[#23253A]">
-      <div className="p-4 pt-6">
+    <aside className="scroll sticky top-2 h-[97dvh] w-[300px] overflow-y-auto rounded-2xl border border-white/20 bg-[#23253A]">
+      <div className="flex items-start justify-between p-4 pt-6">
         <img alt="" className="h-[60px]" src="/image.png" />
+        <label
+          className=" block cursor-pointer opacity-80  transition-opacity hover:opacity-100 active:opacity-100 md:hidden "
+          htmlFor="menu"
+        >
+          <CircleX className="size-7" />
+        </label>
       </div>
 
       <div className="p-4">

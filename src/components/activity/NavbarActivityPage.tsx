@@ -2,26 +2,26 @@ import {Search, Grip, Bell, ChevronDown} from "lucide-react";
 
 export const NavbarActivityPage = () => {
   return (
-    <nav className="grid grid-cols-2 gap-10">
-      <div className="flex items-center justify-end gap-7 ">
-        <button className="w-24 rounded-2xl bg-gradient-to-tl from-blue-800 to-blue-500 p-0 px-3 py-1 ">
+    <nav className="flex grid-cols-2 flex-col-reverse gap-8 text-sm lg:grid lg:gap-10">
+      <div className="flex items-center justify-end gap-4 lg:gap-7 ">
+        <button className="w-fit flex-1 rounded-2xl bg-gradient-to-tl from-blue-800 to-blue-500 p-0 px-3 py-1 lg:w-24 lg:flex-none ">
           Monthly
         </button>
-        <button className="w-24 rounded-2xl bg-white/20 p-0 px-3 py-1 transition-colors  hover:bg-white/30">
+        <button className="w-fit flex-1 rounded-2xl bg-white/20 p-0 px-3 py-1 transition-colors hover:bg-white/30 lg:w-24  lg:flex-none">
           Weekly
         </button>
-        <button className="w-24 rounded-2xl bg-white/20 p-0 px-3 py-1 transition-colors hover:bg-white/30">
+        <button className="w-fit flex-1 rounded-2xl bg-white/20 p-0 px-3 py-1 transition-colors hover:bg-white/30 lg:w-24 lg:flex-none">
           Daily
         </button>
       </div>
 
-      <div className="flex items-center justify-end gap-7 ">
+      <div className="flex items-center justify-end gap-4 lg:gap-7">
         <button className="text-[#676876] transition-colors hover:text-[#a3a3ac] active:text-[#676876]">
-          <Search className="size-7" />
+          <Search className="size-6" />
         </button>
 
         <button className="text-[#676876] transition-colors hover:text-[#a3a3ac] active:text-[#676876]">
-          <Grip className="size-7" />
+          <Grip className="size-6" />
         </button>
 
         <button className="flex items-center justify-center gap-2 rounded-full bg-gradient-to-tl from-blue-700 to-blue-400 px-3 py-1 text-sm font-bold transition-all hover:from-blue-800 hover:to-blue-500">
