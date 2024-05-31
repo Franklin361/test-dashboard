@@ -9,7 +9,7 @@
 }
 
 body{
-  @apply min-h-screen;
+  @apply min-h-screen bg-gradient-to-tr to-[#15152e] from-[#181731];
 }
 
 @layer components {
