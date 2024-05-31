@@ -43,4 +43,4 @@ The test is to replicate as best as possible the design of the following dashboa
 
 ## **📢 Demo link**
 
-[test-dashboard-meeteam.netlify.app/](test-dashboard-meeteam.netlify.app/)
+[https://test-dashboard-meeteam.netlify.app/](https://test-dashboard-meeteam.netlify.app/)
