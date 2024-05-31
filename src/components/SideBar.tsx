@@ -47,26 +47,26 @@ export const SideBar = () => {
           </li>
           <li>
             <NavLink
-              className={({isActive}) => (isActive ? "active-link" : "inactive-link")}
+              className={({isActive}) => (isActive ? "active-link group" : "inactive-link")}
               to="/news"
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 ">
                 <Newspaper className="size-6" /> News
               </div>
-              <div className="grid size-6 place-items-center rounded-full bg-emerald-600 text-sm text-white">
+              <div className="grid size-6 place-items-center rounded-full bg-emerald-600 text-sm text-white group-first:bg-black/50 group-first:font-bold ">
                 1
               </div>
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={({isActive}) => (isActive ? "active-link" : "inactive-link")}
+              className={({isActive}) => (isActive ? "active-link group" : "inactive-link")}
               to="/messages"
             >
               <div className="flex items-center gap-4">
                 <Mail className="size-6" /> Messages
               </div>
-              <div className="grid size-6 place-items-center rounded-full bg-blue-600 text-sm text-white">
+              <div className="grid size-6 place-items-center rounded-full bg-blue-600 text-sm text-white  group-first:bg-black/50 group-first:font-bold ">
                 2
               </div>
             </NavLink>
